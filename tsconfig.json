@@ -11,6 +11,12 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "paths": {
+      "button": [
+        "./dist/button"
+      ],
+      "button-librar": [
+        "./dist/button-librar"
+      ],
       "input-library": [
         "./dist/input-library"
       ],

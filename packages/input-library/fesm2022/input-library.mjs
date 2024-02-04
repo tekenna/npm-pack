@@ -14,20 +14,15 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.1.2", ngImpor
         }], ctorParameters: () => [] });
 
 class InputLibraryComponent {
+    ngOnInit() {
+        alert('Component Library');
+    }
     static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.1.2", ngImport: i0, type: InputLibraryComponent, deps: [], target: i0.ɵɵFactoryTarget.Component }); }
-    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "17.1.2", type: InputLibraryComponent, isStandalone: true, selector: "lib-input-library", ngImport: i0, template: `
-    <p>
-      input-library works!
-    </p>
-  `, isInline: true, styles: [""] }); }
+    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "17.1.2", type: InputLibraryComponent, isStandalone: true, selector: "lib-input-library", ngImport: i0, template: ` <p>Testing input component library</p> `, isInline: true, styles: [""] }); }
 }
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.1.2", ngImport: i0, type: InputLibraryComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'lib-input-library', standalone: true, imports: [], template: `
-    <p>
-      input-library works!
-    </p>
-  ` }]
+            args: [{ selector: 'lib-input-library', standalone: true, imports: [], template: ` <p>Testing input component library</p> ` }]
         }] });
 
 /*
