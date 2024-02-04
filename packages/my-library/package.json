@@ -1,6 +1,6 @@
 {
-  "name": "@tekenna/my-library",
-  "version": "1.0.4",
+  "name": "tekenna-my-library",
+  "version": "1.0.1",
   "peerDependencies": {
     "@angular/common": "^17.1.0",
     "@angular/core": "^17.1.0"
@@ -21,6 +21,5 @@
       "esm": "./esm2022/tekenna-my-library.mjs",
       "default": "./fesm2022/tekenna-my-library.mjs"
     }
-  },
-  "gitHead": "713722fc842ef130dc89edefae1662117e6633df"
+  }
 }
