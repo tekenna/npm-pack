@@ -21,5 +21,6 @@
       "esm": "./esm2022/button.mjs",
       "default": "./fesm2022/button.mjs"
     }
-  }
+  },
+  "gitHead": "cb2a4cd2dadd49604e1017de6d8bb1f10d271668"
 }
