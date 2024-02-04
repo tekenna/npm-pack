@@ -1,0 +1,6 @@
+/*
+ * Public API Surface of my-library
+ */
+export * from './lib/my-library.service';
+export * from './lib/my-library.component';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Byb2plY3RzL215LWxpYnJhcnkvc3JjL3B1YmxpYy1hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0dBRUc7QUFFSCxjQUFjLDBCQUEwQixDQUFDO0FBQ3pDLGNBQWMsNEJBQTRCLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICogUHVibGljIEFQSSBTdXJmYWNlIG9mIG15LWxpYnJhcnlcbiAqL1xuXG5leHBvcnQgKiBmcm9tICcuL2xpYi9teS1saWJyYXJ5LnNlcnZpY2UnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvbXktbGlicmFyeS5jb21wb25lbnQnO1xuIl19
