@@ -39,4 +39,4 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.1.2", ngImpor
  */
 
 export { ButtonComponent, ButtonService };
-//# sourceMappingURL=button.mjs.map
+//# sourceMappingURL=tekenna-button.mjs.map

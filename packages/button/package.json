@@ -1,6 +1,6 @@
 {
-  "name": "button",
-  "version": "1.0.2",
+  "name": "@tekenna/button",
+  "version": "1.0.1",
   "peerDependencies": {
     "@angular/common": "^17.1.0",
     "@angular/core": "^17.1.0"
@@ -9,7 +9,7 @@
     "tslib": "^2.3.0"
   },
   "sideEffects": false,
-  "module": "fesm2022/button.mjs",
+  "module": "fesm2022/tekenna-button.mjs",
   "typings": "index.d.ts",
   "exports": {
     "./package.json": {
@@ -17,10 +17,9 @@
     },
     ".": {
       "types": "./index.d.ts",
-      "esm2022": "./esm2022/button.mjs",
-      "esm": "./esm2022/button.mjs",
-      "default": "./fesm2022/button.mjs"
+      "esm2022": "./esm2022/tekenna-button.mjs",
+      "esm": "./esm2022/tekenna-button.mjs",
+      "default": "./fesm2022/tekenna-button.mjs"
     }
-  },
-  "gitHead": "10209fdf85c49e54609b2ea017d59fc0ec203665"
+  }
 }

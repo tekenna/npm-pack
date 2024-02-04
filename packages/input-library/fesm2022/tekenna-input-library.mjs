@@ -34,4 +34,4 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.1.2", ngImpor
  */
 
 export { InputLibraryComponent, InputLibraryService };
-//# sourceMappingURL=input-library.mjs.map
+//# sourceMappingURL=tekenna-input-library.mjs.map
