@@ -15,7 +15,7 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.1.2", ngImpor
                 }]
         }], ctorParameters: () => [] });
 
-class ButtonComponent {
+class TekButtonModule {
     constructor() {
         this.classname = 'rounded-[5px]  gap-[4px] px-[12px] flex items-center justify-center text-[12px] font-[500] leading-[150%] transition-all ease-in-out duration-300';
         this.classes = {};
@@ -88,8 +88,8 @@ class ButtonComponent {
                 ' ' +
                 this.options.class;
     }
-    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.1.2", ngImport: i0, type: ButtonComponent, deps: [], target: i0.ɵɵFactoryTarget.Component }); }
-    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "17.1.2", type: ButtonComponent, isStandalone: true, selector: "button", inputs: { props: "props", options: "options", state: "state" }, ngImport: i0, template: `<span class="{{ classname }}">
+    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.1.2", ngImport: i0, type: TekButtonModule, deps: [], target: i0.ɵɵFactoryTarget.Component }); }
+    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "17.1.2", type: TekButtonModule, isStandalone: true, selector: "tek-button", inputs: { props: "props", options: "options", state: "state" }, ngImport: i0, template: `<span class="{{ classname }}">
     <img
       *ngIf="props.leftIcon && props.leftIcon !== ''"
       src="{{ props.leftIcon }}"
@@ -103,9 +103,9 @@ class ButtonComponent {
     />
   </span>`, isInline: true, styles: [""], dependencies: [{ kind: "ngmodule", type: CommonModule }, { kind: "directive", type: i1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }] }); }
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.1.2", ngImport: i0, type: ButtonComponent, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.1.2", ngImport: i0, type: TekButtonModule, decorators: [{
             type: Component,
-            args: [{ selector: 'button', standalone: true, imports: [CommonModule], template: `<span class="{{ classname }}">
+            args: [{ selector: 'tek-button', standalone: true, imports: [CommonModule], template: `<span class="{{ classname }}">
     <img
       *ngIf="props.leftIcon && props.leftIcon !== ''"
       src="{{ props.leftIcon }}"
@@ -134,5 +134,5 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.1.2", ngImpor
  * Generated bundle index. Do not edit.
  */
 
-export { ButtonComponent, ButtonService };
+export { ButtonService, TekButtonModule };
 //# sourceMappingURL=tekenna-button.mjs.map
