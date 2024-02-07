@@ -89,11 +89,35 @@ class ButtonComponent {
                 this.options.class;
     }
     static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.1.2", ngImport: i0, type: ButtonComponent, deps: [], target: i0.ɵɵFactoryTarget.Component }); }
-    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "17.1.2", type: ButtonComponent, isStandalone: true, selector: "button", inputs: { props: "props", options: "options", state: "state" }, ngImport: i0, template: "<span class=\"{{ classname }}\">\n  <img\n    *ngIf=\"props.leftIcon && props.leftIcon !== ''\"\n    src=\"{{ props.leftIcon }}\"\n    alt=\"\"\n  />\n  {{ props.label }}\n  <img\n    *ngIf=\"props.rightIcon && props.rightIcon !== ''\"\n    src=\"{{ props.rightIcon }}\"\n    alt=\"\"\n  />\n</span>\n", styles: [""], dependencies: [{ kind: "ngmodule", type: CommonModule }, { kind: "directive", type: i1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }] }); }
+    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "17.1.2", type: ButtonComponent, isStandalone: true, selector: "button", inputs: { props: "props", options: "options", state: "state" }, ngImport: i0, template: `<span class="{{ classname }}">
+    <img
+      *ngIf="props.leftIcon && props.leftIcon !== ''"
+      src="{{ props.leftIcon }}"
+      alt=""
+    />
+    {{ props.label }}
+    <img
+      *ngIf="props.rightIcon && props.rightIcon !== ''"
+      src="{{ props.rightIcon }}"
+      alt=""
+    />
+  </span>`, isInline: true, styles: [""], dependencies: [{ kind: "ngmodule", type: CommonModule }, { kind: "directive", type: i1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }] }); }
 }
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.1.2", ngImport: i0, type: ButtonComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'button', standalone: true, imports: [CommonModule], template: "<span class=\"{{ classname }}\">\n  <img\n    *ngIf=\"props.leftIcon && props.leftIcon !== ''\"\n    src=\"{{ props.leftIcon }}\"\n    alt=\"\"\n  />\n  {{ props.label }}\n  <img\n    *ngIf=\"props.rightIcon && props.rightIcon !== ''\"\n    src=\"{{ props.rightIcon }}\"\n    alt=\"\"\n  />\n</span>\n" }]
+            args: [{ selector: 'button', standalone: true, imports: [CommonModule], template: `<span class="{{ classname }}">
+    <img
+      *ngIf="props.leftIcon && props.leftIcon !== ''"
+      src="{{ props.leftIcon }}"
+      alt=""
+    />
+    {{ props.label }}
+    <img
+      *ngIf="props.rightIcon && props.rightIcon !== ''"
+      src="{{ props.rightIcon }}"
+      alt=""
+    />
+  </span>` }]
         }], propDecorators: { props: [{
                 type: Input
             }], options: [{
