@@ -1,0 +1,13 @@
+<span class="{{ classname }}">
+  <img
+    *ngIf="props.leftIcon && props.leftIcon !== ''"
+    src="{{ props.leftIcon }}"
+    alt=""
+  />
+  {{ props.label }}
+  <img
+    *ngIf="props.rightIcon && props.rightIcon !== ''"
+    src="{{ props.rightIcon }}"
+    alt=""
+  />
+</span>
