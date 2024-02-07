@@ -6,7 +6,19 @@ import { CommonModule } from '@angular/common';
   selector: 'button',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './button.component.html',
+  template: `<span class="{{ classname }}">
+    <img
+      *ngIf="props.leftIcon && props.leftIcon !== ''"
+      src="{{ props.leftIcon }}"
+      alt=""
+    />
+    {{ props.label }}
+    <img
+      *ngIf="props.rightIcon && props.rightIcon !== ''"
+      src="{{ props.rightIcon }}"
+      alt=""
+    />
+  </span>`,
   styles: ``,
 })
 export class ButtonComponent implements OnInit {
