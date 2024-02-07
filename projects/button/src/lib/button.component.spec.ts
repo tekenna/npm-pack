@@ -10,7 +10,6 @@ describe('ButtonComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [TekButtonModule],
-      declarations: [ TekButtonModule ],
       schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
