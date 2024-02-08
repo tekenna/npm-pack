@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TekButtonModule } from './button.component';
+import { IOptions, IProps, IState } from './button.interface';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('ButtonComponent', () => {
@@ -9,7 +10,7 @@ describe('ButtonComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TekButtonModule],
+      imports: [TekButtonModule, ],
       schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
