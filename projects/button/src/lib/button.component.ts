@@ -1,9 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { IOptions, IProps, IState } from './button.interface';
-// import { CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'tek-button',
+  standalone: true,
+  imports: [CommonModule],
   template: `<span class="{{ classname }}">
     <img
       *ngIf="props.leftIcon && props.leftIcon !== ''"
@@ -19,7 +21,7 @@ import { IOptions, IProps, IState } from './button.interface';
   </span>`,
   styles: ``,
 })
-export class TekButtonComponent implements OnInit {
+export class TekButtonModule implements OnInit {
   classname =
     'rounded-[5px]  gap-[4px] px-[12px] flex items-center justify-center text-[12px] font-[500] leading-[150%] transition-all ease-in-out duration-300';
   classes: any = {};

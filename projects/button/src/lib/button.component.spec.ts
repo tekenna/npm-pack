@@ -1,24 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TekButtonComponent} from './button.component';
-import { IOptions, IProps, IState } from './button.interface';
-import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { TekButtonModule } from './button.component';
 
 describe('ButtonComponent', () => {
-  let component: TekButtonComponent;
-  let fixture: ComponentFixture<TekButtonComponent>;
+  let component: TekButtonModule;
+  let fixture: ComponentFixture<TekButtonModule>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TekButtonComponent ],
-      schemas: [NO_ERRORS_SCHEMA]
+      imports: [TekButtonModule]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(TekButtonComponent);
+    fixture = TestBed.createComponent(TekButtonModule);
     component = fixture.componentInstance;
     fixture.detectChanges();
-    
   });
 
   it('should create', () => {

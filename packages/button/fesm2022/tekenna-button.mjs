@@ -1,5 +1,5 @@
 import * as i0 from '@angular/core';
-import { Injectable, Component, Input, NgModule } from '@angular/core';
+import { Injectable, Component, Input } from '@angular/core';
 import * as i1 from '@angular/common';
 import { CommonModule } from '@angular/common';
 
@@ -15,8 +15,7 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.1.2", ngImpor
                 }]
         }], ctorParameters: () => [] });
 
-// import { CommonModule } from '@angular/common';
-class TekButtonComponent {
+class TekButtonModule {
     constructor() {
         this.classname = 'rounded-[5px]  gap-[4px] px-[12px] flex items-center justify-center text-[12px] font-[500] leading-[150%] transition-all ease-in-out duration-300';
         this.classes = {};
@@ -89,8 +88,8 @@ class TekButtonComponent {
                 ' ' +
                 this.options.class;
     }
-    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.1.2", ngImport: i0, type: TekButtonComponent, deps: [], target: i0.ɵɵFactoryTarget.Component }); }
-    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "17.1.2", type: TekButtonComponent, selector: "tek-button", inputs: { props: "props", options: "options", state: "state" }, ngImport: i0, template: `<span class="{{ classname }}">
+    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.1.2", ngImport: i0, type: TekButtonModule, deps: [], target: i0.ɵɵFactoryTarget.Component }); }
+    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "17.1.2", type: TekButtonModule, isStandalone: true, selector: "tek-button", inputs: { props: "props", options: "options", state: "state" }, ngImport: i0, template: `<span class="{{ classname }}">
     <img
       *ngIf="props.leftIcon && props.leftIcon !== ''"
       src="{{ props.leftIcon }}"
@@ -102,11 +101,11 @@ class TekButtonComponent {
       src="{{ props.rightIcon }}"
       alt=""
     />
-  </span>`, isInline: true, styles: [""], dependencies: [{ kind: "directive", type: i1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }] }); }
+  </span>`, isInline: true, styles: [""], dependencies: [{ kind: "ngmodule", type: CommonModule }, { kind: "directive", type: i1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }] }); }
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.1.2", ngImport: i0, type: TekButtonComponent, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.1.2", ngImport: i0, type: TekButtonModule, decorators: [{
             type: Component,
-            args: [{ selector: 'tek-button', template: `<span class="{{ classname }}">
+            args: [{ selector: 'tek-button', standalone: true, imports: [CommonModule], template: `<span class="{{ classname }}">
     <img
       *ngIf="props.leftIcon && props.leftIcon !== ''"
       src="{{ props.leftIcon }}"
@@ -127,20 +126,6 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.1.2", ngImpor
                 type: Input
             }] } });
 
-class TekButtonModule {
-    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.1.2", ngImport: i0, type: TekButtonModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule }); }
-    static { this.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "17.1.2", ngImport: i0, type: TekButtonModule, declarations: [TekButtonComponent], imports: [CommonModule], exports: [TekButtonComponent] }); }
-    static { this.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "17.1.2", ngImport: i0, type: TekButtonModule, imports: [CommonModule] }); }
-}
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.1.2", ngImport: i0, type: TekButtonModule, decorators: [{
-            type: NgModule,
-            args: [{
-                    declarations: [TekButtonComponent],
-                    imports: [CommonModule],
-                    exports: [TekButtonComponent],
-                }]
-        }] });
-
 /*
  * Public API Surface of button
  */
@@ -149,5 +134,5 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.1.2", ngImpor
  * Generated bundle index. Do not edit.
  */
 
-export { ButtonService, TekButtonComponent, TekButtonModule };
+export { ButtonService, TekButtonModule };
 //# sourceMappingURL=tekenna-button.mjs.map
